@@ -1,46 +1,123 @@
-# Password Strength Checker
+# 🔐 Password Strength Checker (CLI Tool)
 
-A lightweight **Python CLI tool** that analyzes password strength and generates **cryptographically secure passwords** to help improve user security.
+A lightweight **Python command-line tool** that analyzes password strength and generates **cryptographically secure passwords**.
 
----
-
-## Features
-
-* Check password strength instantly
-* Generate secure random passwords
-* Uses Python's `secrets` module for strong randomness
-* Simple **command-line interface**
-* Lightweight and beginner-friendly
-* Works on **Linux, Windows, and macOS**
+This project demonstrates how password security tools work and is designed as a **cybersecurity learning project**.
 
 ---
 
-## Installation
+# 🚀 Features
 
-### 1. Clone the repository
+* ✔ Check password strength instantly
+* ✔ Generate secure random passwords
+* ✔ Uses Python's **cryptographically secure ****`secrets`**** module**
+* ✔ Simple **command-line interface (CLI)**
+* ✔ Lightweight and beginner friendly
+* ✔ Works on **Linux, Windows, and macOS**
+
+---
+
+# 📦 Step-by-Step Installation
+
+## 1️⃣ Install Python
+
+Make sure Python **3.6 or higher** is installed.
+
+Check your Python version:
+
+```bash
+python --version
+```
+
+or
+
+```bash
+python3 --version
+```
+
+If Python is not installed, download it from:
+
+https://www.python.org/downloads/
+
+---
+
+## 2️⃣ Clone the Repository
+
+Open your terminal and run:
 
 ```bash
 git clone https://github.com/RishuRana2867/password-strength-checker.git
+```
+
+Move into the project folder:
+
+```bash
 cd password-strength-checker
 ```
 
-### 2. Run the tool
+---
+
+## 3️⃣ (Optional) Create a Virtual Environment
+
+Linux / macOS:
+
+```bash
+python3 -m venv venv
+```
+
+Windows:
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+Windows
+
+```bash
+venv\Scripts\activate
+```
+
+---
+
+## 4️⃣ Install Requirements
+
+This project only uses **Python standard libraries**, so no external packages are required.
+
+But you can still run:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 5️⃣ Run the Tool
 
 ```bash
 python strength_checker.py -h
 ```
 
+You should see the help menu.
+
 ---
 
-## Usage
+# 🛠 Usage
 
-### Check Password Strength
+## Check Password Strength
 
 ```bash
 python strength_checker.py -c MyPassword123!
 ```
 
-Example output:
+Example Output:
 
 ```
 [+] Password: MyPassword123!
@@ -49,13 +126,13 @@ Example output:
 
 ---
 
-### Generate a Secure Password
+## Generate Secure Password
 
 ```bash
 python strength_checker.py -g 16
 ```
 
-Example output:
+Example Output:
 
 ```
 [+] Generated Password: aB$9k!2LmQ@1pRz7
@@ -63,27 +140,37 @@ Example output:
 
 ---
 
-## Command Options
+# ⚙ Command Options
 
-| Option               | Description                |
-| -------------------- | -------------------------- |
-| `-c` or `--check`    | Check password strength    |
-| `-g` or `--generate` | Generate a secure password |
-| `-h` or `--help`     | Show help menu             |
+| Option | Description                |
+| ------ | -------------------------- |
+| `-c`   | Check password strength    |
+| `-g`   | Generate a secure password |
+| `-h`   | Show help menu             |
+
+Example:
+
+```bash
+python strength_checker.py -c password123
+```
+
+```bash
+python strength_checker.py -g 12
+```
 
 ---
 
-## Password Strength Criteria
+# 🔍 Password Strength Criteria
 
 The tool evaluates passwords based on:
 
-* Minimum length (8+ characters)
+* Password length (8+ characters)
 * Lowercase letters
 * Uppercase letters
 * Numbers
 * Special characters
 
-Passwords are categorized as:
+Strength levels:
 
 * **Weak**
 * **Medium**
@@ -91,7 +178,7 @@ Passwords are categorized as:
 
 ---
 
-## Project Structure
+# 📂 Project Structure
 
 ```
 password-strength-checker
@@ -105,11 +192,11 @@ password-strength-checker
 
 ---
 
-## Requirements
+# 📋 Requirements
 
-Python **3.6 or higher**
+Python **3.6+**
 
-The following modules are used:
+This tool uses only Python **built-in modules**:
 
 ```
 string
@@ -117,11 +204,11 @@ secrets
 argparse
 ```
 
-All of these are **built into Python**, so no additional installation is required.
+No external dependencies are required.
 
 ---
 
-## Example
+# 💡 Example
 
 ```
 $ python strength_checker.py -c password123
@@ -129,26 +216,31 @@ $ python strength_checker.py -c password123
 [+] Strength : MEDIUM
 ```
 
+```
+$ python strength_checker.py -g 12
+[+] Generated Password: @G7!kL9$wPq1
+```
+
 ---
 
-## Future Improvements
+# 🔮 Future Improvements
 
-Possible features to add:
+Possible improvements for this project:
 
 * Password entropy calculation
-* Colorized terminal output
-* Password breach checking (HaveIBeenPwned API)
-* Wordlist attack simulation
+* Colored terminal output
+* Password breach checking
+* Dictionary attack simulation
 * GUI version of the tool
 
 ---
 
-## License
+# 📜 License
 
 This project is licensed under the **MIT License**.
 
 ---
 
-## Author
+# 👨‍💻 Author
 
-Created as a **Python cybersecurity learning project**.
+Created as a **Python cybersecurity learning project** to practice building security tools and command-line utilities.
